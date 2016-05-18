@@ -1,0 +1,20 @@
+// Base
+@import 'base/_reset.scss';
+@import 'base/_colors.scss';
+@import 'base/_fonts.scss';
+
+// Vendors
+
+// Components
+@import 'components/_buttons.scss';
+
+// Layout
+@import 'layout/_container.scss';
+@import 'layout/_nav.scss';
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_notecard.scss';
+
+// Pages
+@import 'pages/_home.scss';
+
