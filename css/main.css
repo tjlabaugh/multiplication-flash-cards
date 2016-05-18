@@ -364,6 +364,19 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #003366;
+  font-size: 1.6em;
+  color: #fff;
+  border-radius: 10px;
+  transition: background-color .5s; }
+
+button:hover {
+  background-color: #325B84; }
+
 .container {
   width: 85%;
   margin: 0 auto; }
@@ -381,6 +394,13 @@ textarea {
   height: 100%;
   font-size: 5em;
   line-height: 300px;
+  text-align: center; }
+
+.userInput {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 4em;
   text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

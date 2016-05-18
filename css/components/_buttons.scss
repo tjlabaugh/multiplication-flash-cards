@@ -1,0 +1,14 @@
+button {
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: $blue;
+	font-size: 1.6em;
+	color: $white;
+	border-radius: 10px;
+	transition: background-color .5s;	
+}
+
+button:hover {
+	background-color: $lightblue;
+}
