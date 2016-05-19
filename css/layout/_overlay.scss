@@ -13,6 +13,14 @@
 	width: 35%;
 	height: 500px;
 	margin: 40px auto;
-	background-color: pink;
+	background-color: $white;
 	z-index: 2;
+}
+
+.message {
+	display: block;
+	padding: 20px;
+	top: 50%;
+	font-size: 3em;
+	text-align: center;
 }
