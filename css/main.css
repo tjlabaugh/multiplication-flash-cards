@@ -394,8 +394,27 @@ button:hover {
   height: 100%;
   font-size: 5em;
   line-height: 300px;
-  text-align: center; }
+  text-align: center;
+  opacity: 1; }
 
+.flip {
+  animation: cardflip 2s; }
+
+.showtext {
+  animation: showtext 1s; }
+
+@keyframes cardflip {
+  0% {
+    transform: rotateY(180deg); }
+  100% {
+    transform: rotateY(360deg); } }
+@keyframes showtext {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .userInput {
   display: block;
   width: 100px;

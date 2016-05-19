@@ -5,6 +5,7 @@ var userInput	= document.querySelector('.userInput');
 var message		= document.querySelector('.message');
 var overlay		= document.querySelector('.overlay');
 var streak 		= document.querySelector('.streak');
+var notecard	= document.querySelector('.notecard');
 var randNum1 	= 0;
 var randNum2 	= 0;
 var streakCount = 0;
@@ -17,6 +18,12 @@ function generate() {
 	problem.textContent = randNum1 + " x " + randNum2;
 	userInput.focus();
 	overlay.style.display = 'none';
+	var notecardClassVal = notecard.className;
+	notecardClassVal += ' flip';
+	notecard.className = notecardClassVal;
+	var problemClassVal = problem.className;
+	problemClassVal += ' showtext';
+	problem.className = problemClassVal;
 };
 
 // function will evaluate user's answer.
@@ -38,6 +45,8 @@ function evaluate() {
 	streak.textContent = "Your Streak: " + streakCount;
 	message.innerHTML = output;
 	userInput.value = '';
+	notecard.className = 'notecard';
+	problem.className = 'problem';
 	userInput.blur();
 	overlay.style.display = 'block';
 	genBttn.focus();
